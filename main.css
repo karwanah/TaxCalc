@@ -49,3 +49,14 @@ a {
 }
 .form-row div { margin-bottom: 10px; }
 .form-row input[type="textarea"] { height: 200px; }
+
+.btn-group-lg>.btn, .btn-lg {
+  padding: 0.5rem 5rem;
+  font-size: 1.25rem;
+  border-radius: 6.3rem;
+}
+
+textarea{
+  width:200px;
+  height:100px;
+}
