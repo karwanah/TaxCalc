@@ -12,29 +12,28 @@
     <script src="main.js"></script>
   </head>
 
-<body class="h-50 row align-items-center" >
-  <div id="main" class="text-center">
-    <p class="d-flex justify-content-center align-items-center"><a href="https://taxsummaries.pwc.com/portugal/individual/taxes-on-personal-income"> Tax Brackets 2021</a></p>
-  <h1 style="font-size: 3em;">Welcome! <br>
-    Lets calculate your taxes</h1>
+  <body class="text-center">
+    <form id="form" class="form-signin" onsubmit="return false">
+      <a href="https://taxsummaries.pwc.com/portugal/individual/taxes-on-personal-income">Current Tax Brackets</a>
+      <br>
+      <br>
+  <img class="mb-4" src="pt.svg" alt=""  height="150">
+
+  </label>
+  <h1 class="h3 mb-3 font-weight-normal">Lets calculate your taxes and refund!</h1>
+  <input type="tel" pattern="[0-9]*" novalidate type="number" id="income" class="form-control" placeholder="€ Gross income" required autofocus>
+
+
+  
   <br>
-  <label for="income">Type your gross income(before tax):</label>
-  <br>  
+  <button id="calculate" class="btn btn-lg btn-primary btn-block" type="submit">Calculate</button>
   <br>
-  € <input type="tel" pattern="[0-9]*" novalidate id="income" name="income">
-  <br>
-  <br>
-  <label for="paid">How much taxes you have paid this year</label>
-  <br>
-  <br>
-  € <input type="tel" pattern="[0-9]*" novalidate type="text" id="paid" name="paid">
-  <br>
-  <br>
-  <button type="button" class="btn btn-primary" onclick="CalcTax">Calculate</button>
-  <p id="perc" hidden>Your will be taxed %</p>
-  <p id="taxamount" hidden>Your tax will be  €</p>
-  <br>
-</div>
+    <br>
+    <a href="/">Reset</a>
+<textarea class="container-lg" name="text" rows="8" cols="50" wrap="soft" id="tax"></textarea>
+<p class="mt-5 mb-3 text-muted">&copy; Karwan Ahmadi</p>
+</form>
+
 
 </body>
 </html>
