@@ -23,7 +23,7 @@ var calculateTax = function() {
   // ABOVE 80882€
   if(amount > 80882){
       tax = ((amount - 80882)*.48 + (80882-36967)*.45 + (36967-25075)*.37 + (25075-20322)*.35 + (20322-10732)*.285 + (10732-7112)*.23).toFixed(2);
-      var taxPrint = '                      Taxes Due:  ' + tax + ' €' +'                         Tax rate% ' + (tax / amount * 100).toFixed(1);
+      var taxPrint = '\nTaxes Due: ' + tax + ' €' +'\nTax rate% ' + (tax / amount * 100).toFixed(1);
       salaryaftertax = (income - tax).toFixed(2);
       salaryaftertaxPrint = 'Net Income: ' + salaryaftertax + ' €';
       percentagebracket1 = ((7112/amount)*100).toFixed(1);
@@ -44,7 +44,7 @@ var calculateTax = function() {
   // ABOVE  36967€
   else if( amount > 36967){
       tax = ((amount - 36967)*.45 + (36967-25075)*.37 + (25075-20322)*.35 + (20322-10732)*.285 + (10732-7112)*.23).toFixed(2);
-      var taxPrint = '                      Taxes Due:  ' + tax + ' €' +'                         Tax rate% ' + (tax / amount * 100).toFixed(1);
+      var taxPrint = '\nTaxes Due: ' + tax + ' €' +'\nTax rate% ' + (tax / amount * 100).toFixed(1);
       salaryaftertax = (income - tax).toFixed(2);
       salaryaftertaxPrint = 'Net Income: ' + salaryaftertax + ' €';
       percentagebracket1 = ((20322/amount)*100).toFixed(1);
@@ -62,7 +62,7 @@ var calculateTax = function() {
 // ABOVE  25075€
   else if( amount > 25075){
     tax = ((amount - 25075)*.37 + (25075-20322)*.35 + (20322-10732)*.285 + (10732-7112)*.23).toFixed(2);
-    var taxPrint = '                      Taxes Due:  ' + tax + ' €' +'                         Tax rate% ' + (tax / amount * 100).toFixed(1);
+    var taxPrint = '\nTaxes Due: ' + tax + ' €' +'\nTax rate% ' + (tax / amount * 100).toFixed(1);
     salaryaftertax = (income - tax).toFixed(2);
     salaryaftertaxPrint = 'Net Income: ' + salaryaftertax + ' €';
     percentagebracket1 = ((7112/amount)*100).toFixed(1);
@@ -81,7 +81,7 @@ var calculateTax = function() {
 // ABOVE  20322€
 else if( amount > 20322){
   tax = ((amount - 20322)*.35 + (20322-10732)*.285 + (10732-7112)*.23).toFixed(2);
-  var taxPrint = '                      Taxes Due:  ' + tax + ' €' +'                         Tax rate% ' + (tax / amount * 100).toFixed(1);
+  var taxPrint = '\nTaxes Due: ' + tax + ' €' +'\nTax rate% ' + (tax / amount * 100).toFixed(1);
   salaryaftertax = (income - tax).toFixed(2);
   salaryaftertaxPrint = 'Net Income: ' + salaryaftertax + ' €';
   percentagebracket1 = ((7112/amount)*100).toFixed(1);
@@ -98,7 +98,7 @@ else if( amount > 20322){
 // ABOVE  10732€
   else if(amount > 10732){
     tax = ((amount - 10732)*.285 + (10732-7112)*.23).toFixed(2);
-      var taxPrint = '                      Taxes Due:  ' + tax + ' €' +'                         Tax rate% ' + (tax / amount * 100).toFixed(1);
+      var taxPrint = '\nTaxes Due: ' + tax + ' €' +'\nTax rate% ' + (tax / amount * 100).toFixed(1);
       salaryaftertax = (income - tax).toFixed(2);
       salaryaftertaxPrint = 'Net Income: ' + salaryaftertax + ' €';
       percentagebracket1 = ((10732/amount)*100).toFixed(1);
@@ -112,7 +112,7 @@ else if( amount > 20322){
   // ABOVE  7112€
   else if( amount > 7112){
     tax = ((amount - 7112)*.23 + (7112-0)*.0).toFixed(2);
-    var taxPrint = '                      Taxes Due:  ' + tax + ' €' +'                                  Tax rate% ' + (tax / amount * 100).toFixed(1);
+      var taxPrint = '\nTaxes Due: ' + tax + ' €' +'\nTax rate% ' + (tax / amount * 100).toFixed(1);
     salaryaftertax = (income - tax).toFixed(2);
     salaryaftertaxPrint = 'Net Income: ' + salaryaftertax + ' €';
     percentagebracket1 = ((7112/amount)*100).toFixed(1);
@@ -126,7 +126,7 @@ else if( amount > 20322){
 }
   else if(amount > 0){
        tax = amount*0;
-       var taxPrint = '                      Taxes Due:  ' + tax + ' €' +'                                  Tax rate% ' + (tax / amount * 100).toFixed(1);
+       var taxPrint = '\nTaxes Due: ' + tax + ' €' +'\nTax rate% ' + (tax / amount * 100).toFixed(1);
        salaryaftertax = (income - tax).toFixed(2);
        salaryaftertaxPrint = 'Net Income: ' + salaryaftertax + ' €';
        percentagebracket1 = 100;
