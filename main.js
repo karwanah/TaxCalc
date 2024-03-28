@@ -42,7 +42,7 @@ function calcTaxes(amount) {
 function displayResults(taxData, income) {
   var taxRate = income > 0 ? ((taxData.tax / income) * 100).toFixed(1) : 0;
   
-  document.getElementById("tax").textContent ="Net Income: "  + taxData.netIncome + " €" + "\nNet per Month: " + taxData.netIncomePerMonth + "€" + "\nTaxes Due: " + taxData.tax + " €\nTax rate%: " + taxRate;
+  document.getElementById("tax").textContent ="Net Income: "  + taxData.netIncome + " €" + "\nNet per Month: " + taxData.netIncomePerMonth + "€" + "\nTaxes Due: " + taxData.tax + " €\nEffective Tax rate: " + taxRate + "%";
 }
 
 window.onload = function () {
